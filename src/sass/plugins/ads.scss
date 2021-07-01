@@ -1,6 +1,7 @@
 // ==========================================================================
 // Advertisements
 // ==========================================================================
+@use "sass:math";
 
 .plyr__ads {
   border-radius: inherit;
@@ -45,9 +46,8 @@
 .plyr__cues {
   background: currentColor;
   display: block;
-  height: $plyr-range-track-height;
+  height: calc(#{$plyr-range-track-height} / 2);
   left: 0;
-  margin: -($plyr-range-track-height / 2) 0 0;
   opacity: 0.8;
   position: absolute;
   top: 50%;
