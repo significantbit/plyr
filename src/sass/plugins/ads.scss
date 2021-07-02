@@ -46,8 +46,9 @@
 .plyr__cues {
   background: currentColor;
   display: block;
-  height: calc(#{$plyr-range-track-height} / 2);
+  height: $plyr-range-track-height;
   left: 0;
+  margin: calc(#{$plyr-range-track-height} / -2) 0 0;
   opacity: 0.8;
   position: absolute;
   top: 50%;
